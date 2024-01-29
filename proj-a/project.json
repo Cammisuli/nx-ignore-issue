@@ -1,0 +1,14 @@
+{
+  "name": "proj-a",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "proj-a/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "cache": true,
+      "outputs": ["{workspaceRoot}/dist/proj-a"],
+      "command": "node {projectRoot}/repro.js"
+    }
+  },
+  "tags": []
+}

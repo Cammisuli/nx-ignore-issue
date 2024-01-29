@@ -1,0 +1,20 @@
+{
+  "name": "proj-b",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "proj-b/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "cache": true,
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/proj-b",
+        "main": "proj-b/src/index.ts",
+        "tsConfig": "proj-b/tsconfig.lib.json",
+        "assets": ["proj-b/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
